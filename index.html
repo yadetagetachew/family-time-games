@@ -14,89 +14,147 @@
     <!-- JavaScript -->
   <script src="/js/main.js" defer></script>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@519&family=Righteous&display=swap" rel="stylesheet">
+
     <title>Family-Time-Gaming!</title>
   </head>
   <body>
 
-    <div>
-        <input class = "display-box" type = "text" id = "total" />
-    </div>
-    <!-- navbar -->
-    <nav class="navbar navbar-light bg-transparent">
-        <a class="navbar-brand" href="#">
-          <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
-          Family Time Gaming
-        </a>
-      </nav>
+    
+       <!-- navbar -->
+       <nav class="navbar navbar-light">
+        <div class="container-fluid d-flex justify-content-center">
+          <a class="navbar-brand" href="#">
+            <img src="/img/FTG-logo.png" alt="" width="200" height="142" class="">
+            <h1 class="display-1 d-inline-block ">Family Time Gaming</h1>
+          </a>
+        </div>
+        </nav>
 
+            <div class="sidebar">
+                <div class="subtotal">
+                    Cart subtotal:
+                    <br> $ <span id="total">0</span>                    
+                </div>
+            </div>
+          
+      
       <!-- row (E Games) -->
-    <div class="container">
+    <div class="container mt-5">
+        
+        <!-- <img src="/img/everyone.png" alt="" width="90" height="120" class=""> -->
       <div class="row">
-          <div class="col-md">
+        <div class="rating-container">
+            <div class="rating-sidebar">
+                <img src="/img/everyone.png" alt="" width="90" height="120" class="rating">
+            </div>
+        </div>
+          <div class="col-lg col-md-12 col-sm-12 mb-4">
               <div class="card" value="5">
-                      <img class="card-img" src="" alt="Game-1">
+                <div class="img-container">
+                    <img class="card-img img-fluid" src="/img/mario-kart.jpg" alt="Game-1">
+                        <div class="middle">
+                            <div class="price-text">$50</div>
+                </div>
+                
                   <div class="card-body text-center">
-                      <h5 class="card-title">GAME 1</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet est magnam debitis incidunt sunt consequuntur, mollitia aliquid ullam optio!</p>
-                      <button class="btn btn-danger" onclick="addItem(this.value)" value="5">Add to Cart</button>
-                  </div>
+                      <h5 class="card-title">Mario-Kart 7</h5>
+                      <p class="card-text">Modes- Single or Multiplayer<br>Platforms– 3DS</p>
+                      <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="30">Add to Cart</button></div>
+                </div>  
               </div>
           </div>
-        
-          <div class="col-md"> 
+                          <div class="col-lg col-md-12 col-sm-12 mb-4"> 
               <div class="card">
-                  <a href="#"><img class="card-img" src="" alt="Game-2"></a>
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Game 2</h5>
-                      <p class="card-text-moon">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eligendi dignissimos numquam nulla fugit ut porro deleniti, eveniet fuga quidem!</p>
-                      <button class="btn btn-danger" onclick="addItem(this.value)" value="10">Get to know me!</button>
-                  </div>
+                    <div class="img-container">
+                        <img class="card-img img-fluid" src="/img/minecraft.jpg" alt="Game-2"></a>
+                            <div class="middle">
+                                <div class="price-text">$30</div>
+                            </div>
+                        
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Minecraft</h5>
+                            <p class="card-text">Modes – Single or multiplayer<br>Platforms - PlayStation, XBOX </p>
+                            <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="30">Add to Cart</button>
+                        </div>
+                    </div>
               </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-lg col-md-12 col-sm-12 mb-4">
               <div class="card">
-                  <img class="card-img" src="" alt="Game-3">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Game 3</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, deleniti aliquam quisquam ratione earum nulla officiis mollitia optio placeat amet!</p>
-                      <a href="#" class="btn btn-danger">Go somewhere</a>
-                  </div>
+                    <div class="img-container">
+                        <img class="card-img img-fluid" src="/img/little-big-planet.jpg" alt="Game-3">
+                            <div class="middle">
+                                <div class="price-text">$45</div>
+                            </div>
+                        
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Little Big Planet</h5>
+                            <p class="card-text">Modes- Single player or local co-op <br>Platforms- PlayStation 3, PlayStation 4</p>
+                            <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="45">Add to Cart</button>
+                        </div>
+                    </div>
               </div>
           </div>
       </div>
     <!-- Row (Teen Games)  -->
     <div class="container">
       <div class="row">
-          <div class="col-md">
+        <div class="rating-container">
+            <div class="rating-sidebar">
+                <img src="/img/teen2.png" alt="" width="90" height="120" class="rating">
+            </div>
+        </div>
+          <div class="col-lg col-md-12 col-sm-12 mb-4">
               <div class="card" >
-                      <img class="card-img" src="" alt="Game-4">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">GAME 4</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet est magnam debitis incidunt sunt consequuntur, mollitia aliquid ullam optio!</p>
-                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                <div class="img-container">
+                    <img class="card-img img-fluid" src="/img/destiny-2.jpg" alt="Game-4">
+                    <div class="middle">
+                        <div class="price-text">$50</div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Destiny 2</h5>
+                        <p class="card-text">Modes – Single or multiplayer<br>Platforms - Microsoft Windows, PlayStation 4, Xbox One, Xbox Series X/S</p>
+                        <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="50">Add to Cart</button>
+                    </div>
                   </div>
               </div>
           </div>
         
-          <div class="col-md"> 
+          <div class="col-lg col-md-12 col-sm-12 mb-4"> 
               <div class="card">
-                  <a href="#"><img class="card-img" src="" alt="Game-5"></a>
+                <div class="img-container">
+                  <img class="card-img img-fluid" src="/img/fortnite.jpg" alt="Game-5"></a>
+                    <div class="middle">
+                        <div class="price-text">$15</div>
+                    </div>
+                
                   <div class="card-body text-center">
-                      <h5 class="card-title">Game 5</h5>
-                      <p class="card-text-moon">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eligendi dignissimos numquam nulla fugit ut porro deleniti, eveniet fuga quidem!</p>
-                      <a href="#" class="btn btn-danger">Get to know me!</a>
+                      <h5 class="card-title">Fortnite Starter Pack</h5>
+                      <p class="card-text">Modes – Single or multiplayer<br>Platforms - PlayStation 4, Xbox, Nintendo Switch</p>
+                      <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="15">Add to Cart</button>
+                    </div>
                   </div>
               </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-lg col-md-12 col-sm-12 mb-4">
               <div class="card">
-                  <img class="card-img" src="" alt="Game-6">
+                <div class="img-container">
+                  <img class="card-img img-fluid" src="/img/uncharted-4.jpg" alt="Game-6">
+                    <div class="middle">
+                        <div class="price-text">$50</div>
+                    </div>
+                
                   <div class="card-body text-center">
-                      <h5 class="card-title">Game 6</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, deleniti aliquam quisquam ratione earum nulla officiis mollitia optio placeat amet!</p>
-                      <a href="#" class="btn btn-danger">Go somewhere</a>
+                      <h5 class="card-title">Uncharted 4</h5>
+                      <p class="card-text">Mode – Single player<br>Platforms - PlayStation 4, Microsoft Windows</p>
+                      <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="50">Add to Cart</button>
+                    </div>
                   </div>
               </div>
           </div>
@@ -104,41 +162,67 @@
     <!-- Row 3 (M Games) -->
     <div class="container">
       <div class="row">
-          <div class="col-md">
+        <div class="rating-container">
+            <div class="rating-sidebar">
+                <img src="/img/mature2.png" alt="" width="90" height="120" class="rating">
+            </div>
+        </div>
+          <div class="col-lg col-md-12 col-sm-12 mb-4">
               <div class="card" >
-                  <img class="card-img" src="" alt="Game-7">
+                <div class="img-container">
+                  <img class="card-img img-fluid" src="/img/god-of-war.jpg" alt="Game-7">
+                    <div class="middle">
+                        <div class="price-text">$50</div>
+                    </div>
+                
                   <div class="card-body text-center">
-                      <h5 class="card-title">GAME 7</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet est magnam debitis incidunt sunt consequuntur, mollitia aliquid ullam optio!</p>
-                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                      <h5 class="card-title">God of War</h5>
+                      <p class="card-text">Mode – Single player<br>Platforms - PlayStation 4, Microsoft Windows</p>
+                      <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="50">Add to Cart</button>
+                    </div>
                   </div>
               </div>
           </div>
         
-          <div class="col-md"> 
+          <div class="col-lg col-md-12 col-sm-12 mb-4"> 
               <div class="card">
-                  <img class="card-img" src="" alt="Game-8"></a>
+                <div class="img-container">
+                  <img class="card-img img-fluid" src="/img/ac-vahalla.jpg" alt="Game-8"></a>
+                    <div class="middle">
+                        <div class="price-text">$50</div>
+                    </div>
+                
                   <div class="card-body text-center">
-                      <h5 class="card-title">Game 8</h5>
-                      <p class="card-text-moon">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eligendi dignissimos numquam nulla fugit ut porro deleniti, eveniet fuga quidem!</p>
-                      <a href="#" class="btn btn-danger">Get to know me!</a>
+                      <h5 class="card-title">Assassin's Creed: Valhalla</h5>
+                      <p class="card-text">Mode – Single player<br>Platforms - PlayStation 4, Xbox, Xbox One, PlayStation 5, Microsoft Windows</p>
+                      <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="50">Add to Cart</button>
+                    </div>
                   </div>
               </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-lg col-md-12 col-sm-12 mb-4">
               <div class="card">
-                  <img class="card-img" src="" alt="Game-9">
+                <div class="img-container">
+                  <img class="card-img img-fluid" src="/img/tomb-raider.jpg" alt="Game-9">
+                    <div class="middle">
+                        <div class="price-text">$50</div>
+                    </div>
+                
                   <div class="card-body text-center">
-                      <h5 class="card-title">Game 9</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, deleniti aliquam quisquam ratione earum nulla officiis mollitia optio placeat amet!</p>
-                      <a href="#" class="btn btn-danger">Go somewhere</a>
+                      <h5 class="card-title">Tomb Raider</h5>
+                      <p class="card-text">Mode – Single or multiplayer<br>Platforms - Microsoft Windows, PlayStation 3, Xbox 360, PlayStation 4, Xbox One</p>
+                      <button class="btn-lg btn-primary" onclick="addItem(this.value)" value="50">Add to Cart</button>                   
                   </div>
-              </div>
           </div>
       </div>
     </div>
 
+
+
+    <!-- <div>
+      grand total: <input class = "display-box" type = "text" id = "total" />
+    </div> -->
 
 
     <!-- Optional JavaScript; choose one of the two! -->
